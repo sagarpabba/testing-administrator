@@ -17,10 +17,10 @@ public class DBUtils {
 	public static PreparedStatement ps=null;
 	public static ResultSet rs=null;
 	
-    public static String drivername=Bundle.getString("jdbc.driver.name");
-    public static String connectionurl=Bundle.getString("jdbc.driver.url");
-    public static String username=Bundle.getString("jdbc.driver.username");
-    public static String password=Bundle.getString("jdbc.driver.password");
+    public static String drivername=Bundle.getClassPathString("jdbc.driver.name");
+    public static String connectionurl=Bundle.getClassPathString("jdbc.driver.url");
+    public static String username=Bundle.getClassPathString("jdbc.driver.username");
+    public static String password=Bundle.getClassPathString("jdbc.driver.password");
 	
    public  Connection getConnection(){
 	  try {

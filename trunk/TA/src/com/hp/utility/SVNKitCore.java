@@ -16,9 +16,9 @@ import org.tmatesoft.svn.core.wc.SVNWCUtil;
 public class SVNKitCore {
 	
 	
-	public static String url=Bundle.getString("svn.project.url");
-	public static String username=Bundle.getString("svn.project.username");
-	public static String password=Bundle.getString("svn.project.password");
+	public static String url=Bundle.getClassPathString("svn.project.url");
+	public static String username=Bundle.getClassPathString("svn.project.username");
+	public static String password=Bundle.getClassPathString("svn.project.password");
 	
 	//public static long startrevision=Long.valueOf(Bundle.getString("svn.startrevision"));
 	//public static long endrevision=Long.valueOf(Bundle.getString("svn.endrevision"));
