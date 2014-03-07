@@ -184,7 +184,7 @@
   <body>
    <div class="modal"></div>
 	<h2>Welcome <%=session.getAttribute("userid") %></h2>
-    <p id="page-intro">What's up today?</p>
+    <p id="page-intro">What's up today?(Please Visit Test Data Via this URL:http://pdeauto06.fc.hp.com/TD from the browser directly)</p>
     <a class="message" href="#" rel="executions.jsp">
     <div class="app-box">
 	    <div class="reminder red-shadow">
@@ -227,7 +227,7 @@
 	</div>
 	</a>
 	<div class="clear"></div> <!-- End .clear -->
-	<li><a class="fancybox shortcut-button" href="#" rel="facebox"><span>
+	<li><a class="fancybox shortcut-button" href="http://pdeauto06.fc.hp.com/TD" rel="facebox"><span>
 					<img src="resources/images/pencil.png" alt="icon" /><br />
 					 Log New Execution
 				</span></a>

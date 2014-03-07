@@ -1,16 +1,12 @@
 package com.hp.utility;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.util.Locale;
+
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 public class Bundle{
 	    private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle("settings"); //resource.properties file
-	  
+	  /*
 	    private static ResourceBundle RESOURCE_BUNDLE_ABSOLUTEPATH=null;
 	    static{
 	    	 File file = new File(""); //any parent path you specified here
@@ -22,7 +18,7 @@ public class Bundle{
 	    	 catch (MalformedURLException e){
 			        e.printStackTrace();
 			 }	    	
-	     }
+	     }*/
 	  
 	   
 	   /** 
@@ -54,7 +50,7 @@ public class Bundle{
 	* @throws 
 	*/ 
 	
-	public static String getAbsolutePathString(String key) {
+	/*public static String getAbsolutePathString(String key) {
 		     try {
 		        return RESOURCE_BUNDLE_ABSOLUTEPATH.getString(key);
 		     } catch (MissingResourceException e) {
@@ -63,4 +59,6 @@ public class Bundle{
 		     
 		 
 		   }
+		   
+		   */
 	}

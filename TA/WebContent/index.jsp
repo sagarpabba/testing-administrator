@@ -71,7 +71,9 @@
     	//  $.fancybox.message.info("this is an info box !");
   		
     	 //delay to insert the user info
-    	  setTimeout($.getJSON('http://freegeoip.net/json/', function(location) {
+    	 
+    	 
+    	 <%--  setTimeout($.getJSON('http://freegeoip.net/json/', function(location) {
 	    		  // example where I update content on the page.
 	    		 var  username='<%=session.getAttribute("userid")%>';
 	    		  var ip=location.ip;
@@ -111,8 +113,8 @@
     	          }
 	    		
     		  ),90000);
-      });
-      
+      }); --%>
+       
  
  </script>  
 </head>
@@ -158,7 +160,7 @@
 						<li> 
 						    <a  href="#" class="nav-top-item"> Execution Data</a> 
                             <ul>
-								<li><a rel="http://localhost:9999/tadata" href="#">Test Data</a></li>
+								<li><a rel="http://pdeauto06.fc.hp.com/TD" href="#">Test Data</a></li>
 							</ul>     
 						</li>
 						<li>
