@@ -29,7 +29,7 @@ $(document).ready(function(){
         		    $(this).addClass("current");	
         		    var effortid=$(this).attr("id");
         		    if(effortid="effort"){
-        		    	console.log("this is the effort tab clicked");
+        		    	//console.log("this is the effort tab clicked");
         		    	//get the registry value
 						 
 						
