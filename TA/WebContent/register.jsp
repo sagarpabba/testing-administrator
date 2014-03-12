@@ -215,7 +215,7 @@ function registerNow(){
   <tbody>
   <tr>
     <td><label for="fname">User Name:</label></td>
-    <td><div class="input-container"><input class="easyui-validatebox" data-options="required:true,validType:'account[8,20]'"  name="user.name" id="fname" type="text" /></div></td>
+    <td><div class="input-container"><input class="easyui-validatebox" data-options="required:true,validType:'account[4,20]'"  name="user.name" id="fname" type="text" /></div></td>
   </tr>
   <tr>
     <td><label for="email">Your Email:</label></td>
