@@ -38,9 +38,15 @@ $(document).ready(function(){
         		   // pageIsloading();
         		  //  console.log("the current menu is clicked");
         		   // $('body').addClass("loading"); 
-        		   // $.fancybox.showLoading();
-                    $("#maincontent").load(url,function() {
-                    	 
+        		    $.fancybox.showLoading();
+                    $("#maincontent").load(url,function( response, status, xhr ) {
+                       //  console.log("loading status is:"+status);
+                          if(status=="success"){
+                                                 	      
+                    	   }else{
+                    	       $("#maincontent").html("Loading Server data Error "+response);
+                    	   }
+                    	   $.fancybox.hideLoading();
                         });
                  //   $.fancybox.hideLoading();
                   //  console.log("page loading done!");
@@ -54,9 +60,11 @@ $(document).ready(function(){
 			    $("#main-nav li a.no-submenu").removeClass('current');
 			    $(this).addClass('current');
 			    var url=$(this).attr("rel");
+			   // $.fancybox.showLoading();
 			    if(url!="undefined"){
 			    	//pageIsloading();
-                    $("#maincontent").load(url,function() {
+                    $("#maincontent").load(url,function( response, status, xhr ) {
+                        //$.fancybox.hideLoading();
                     });
                   //  $.fancybox.close();
                 }

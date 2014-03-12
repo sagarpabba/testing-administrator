@@ -18,7 +18,12 @@
 	<script type="text/javascript" src="resources/scripts/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="resources/scripts/jquery.mb.browser.min.js"></script>
 	
-	
+	<script type="text/javascript" src="resources/facybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="resources/facybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    
+	<script type="text/javascript" src="resources/facybox/fancybox.message.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/facybox/fancybox.message.css" media="screen" />
+    
 	<script type="text/javascript" src="resources/scripts/commons.js"></script>
 	 <!-- easyui js file -->
     <script type="text/javascript" src="easyui_1.3.4/jquery.easyui.min.js"></script>
