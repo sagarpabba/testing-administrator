@@ -18,11 +18,11 @@
     <link rel="stylesheet" type="text/css" href="resources/facybox/fancybox.message.css"  />
     <script type="text/javascript">
       $(function(){
-    	  $.fancybox.message.info("this is an info box !");
+    	  $.fancybox.showLoading();
       });
     </script>
 </head>
 <body>
-<img alt="error loading data" src="month3dBarAction">
-</body>
+<!-- <img alt="error loading data" src="month3dBarAction">
+ --></body>
 </html>
