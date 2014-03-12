@@ -208,7 +208,7 @@ function registerNow(){
 <body>
 <div id="div-regForm">
 <div class="form-title">Sign Up</div>
-<div class="form-sub-title">It's free and anyone can join</div>
+<div class="form-sub-title">It's Open and anyone can join us</div>
 
 <form id="regForm" action="registerAction" method="post">
 <table>
@@ -230,8 +230,8 @@ function registerNow(){
     <td><div class="input-container"><input class="easyui-validatebox" required="required" validType="equals['#pass']"  id="passwd" type="password" /></div></td>
   </tr>
   <tr>
-    <td><label for="email">Phone (Optional):</label></td>
-    <td><div class="input-container"><input class="easyui-validatebox" data-options="required:true,validType:'mobile'" name="user.phone" id="email" type="text" /></div></td>
+    <td><label for="email">Phone(Optional):</label></td>
+    <td><div class="input-container"><input class="easyui-validatebox" data-options="required:false,validType:'mobile'" name="user.phone" id="email" type="text" /></div></td>
   </tr>
   <tr>
     <td><label for="sex-select">I am:</label></td>
