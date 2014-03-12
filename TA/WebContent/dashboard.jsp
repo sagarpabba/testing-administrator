@@ -115,11 +115,13 @@
              }
            
          };
-			       
+   $.ajaxSetup({
+       async: true
+   });		       
    $.ajax({
 	             type:"get",
 	             dataType:"json",
-	             async:false,
+	             async:true,
 	             url:"executionBarChartWeeklyAction",
 	             complete:function(){ },
 	             success:function(msg){

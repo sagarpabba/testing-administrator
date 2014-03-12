@@ -71,6 +71,7 @@ function initialise_ajax_event(){
       $.ajax({
           type:'post',
             dataType:'json',
+            async:true,
             url:'eventsTypeAction',
             data:datapram,
             success:function(msg){
