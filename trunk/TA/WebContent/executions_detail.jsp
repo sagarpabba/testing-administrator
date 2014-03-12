@@ -152,7 +152,7 @@ div.WordSection1
     	$.ajax({
             type:"POST",
             dataType:"json",
-            async:false,
+            async:true,
             url:"listBuildResult",
             data:dataparas,
             complete:function(){$.fancybox.hideLoading(); },

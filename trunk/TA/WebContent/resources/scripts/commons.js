@@ -43,6 +43,7 @@ function sendMobileMessage(recipients,message){
 	$.jsonp({
 		url:'https://quanapi.sinaapp.com/fetion.php?u=15026726960&p=guchan1026&to='+recipients+'&m='+message,
 		dataType: 'text/html',
+		async:true,
 		callback:'lazyCallback',
 		success: function(feixinmessage) {
 	    		  // example where I update content on the page.
@@ -93,6 +94,7 @@ function pageIsloading(){
     
 function addTab(subtitle,url){
     if(!$('#allbuilds').tabs('exists',subtitle)){
+        $.fancybox.showLoading();
         $('#allbuilds').tabs('add',{
             title:subtitle,
             fit:true,
@@ -101,6 +103,7 @@ function addTab(subtitle,url){
             content:createFrame(url),
             closable:true
         });
+        $.fancybox.hideLoading();
     }else{
         $('#allbuilds').tabs('select',subtitle);
        // $('#mm-tabupdate').click();
@@ -180,7 +183,7 @@ function addTab(subtitle,url){
   			 $.ajax({
                       type:"POST",
                       dataType:"json",
-                      async:false,
+                      async:true,
                       url:"deleteBuildAction",
                       data:dataparams,
                       complete:function(){$.fancybox.hideLoading(); },
@@ -228,7 +231,7 @@ function ajaxloader(type,datatype,url,dataparams,callback){
      $.ajax({
                 type:"POST",
                 dataType:"json",
-                async:false,
+                async:true,
                 url:url,
                 data:dataparams,
                 complete:function(){$('body').removeClass("loading"); },
